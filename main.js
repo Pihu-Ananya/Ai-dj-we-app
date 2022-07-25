@@ -55,23 +55,23 @@ function draw() {
         fill("green")
         stroke("black")
         circle(rightwristX , rightwristY , 30)
-        if(rightwristY>=0&&rightwristy<=100){
+        if(rightwristY>0&&rightwristY<=100){
             song.rate(0.5)
             document.getElementById("speed").innerHTML="speed:0.5x"
         }
-        if(rightwristY>=100&&rightwristy<=200){
+        else if(rightwristY>100&&rightwristY<=200){
             song.rate(1)
             document.getElementById("speed").innerHTML="speed:1x"
         }
-        if(rightwristY>=200&&rightwristy<=300){
+        else if(rightwristY>200&&rightwristY<=300){
             song.rate(1.5)
             document.getElementById("speed").innerHTML="speed:1.5x"
         }
-        if(rightwristY>=300&&rightwristy<=400){
+        else if(rightwristY>300&&rightwristY<=400){
             song.rate(2)
             document.getElementById("speed").innerHTML="speed:2x"
         }
-        if(rightwristY>=400&&rightwristy<=500){
+        else if(rightwristY>400&&rightwristY<=500){
             song.rate(2.5)
             document.getElementById("speed").innerHTML="speed:2.5x"
         }
